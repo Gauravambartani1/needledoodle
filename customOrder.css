@@ -1,0 +1,85 @@
+/* No changes needed here */
+
+.container {
+    display: flex;
+    max-width: 100%;
+    margin-top: 20px;
+    height: 95vh; /* Set the height to 100% of the viewport height */
+}
+
+.video {
+    flex: 1;
+    padding: 0;
+    position: relative;
+    transform: translate(1.5);
+    overflow: hidden;
+}
+
+.video iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200%;
+    height: 200%;
+    object-fit: cover;
+}
+
+
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: 70px;
+
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group textarea {
+    width: 50%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    /* Remove the bottom border here */
+}
+
+/* Add these styles for the click effect */
+.form-group input[type="text"]:focus,
+.form-group input[type="file"]:focus,
+.form-group textarea:focus {
+    outline: none; /* Remove default outline */
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input[type="file"] {
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #393D61;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Curved borders */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #001f3f;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="customOrder.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Custom Order</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#"><img src="assets/logo.jpg" alt="Logo" /></a>
+      </div>
+      <div class="search-bar">
+        <img src="assets/search-icon.svg" alt="Search" />
+        <input type="text" />
+      </div>
+      <div class="icons">
+        <button><img src="assets/wishlist-hollow.png" alt="Wishlist" /></button>
+        <button><img src="assets/shopping-bag.png" alt="Cart" /></button>
+
+        <!--Account section here-->
+        <div class="action">
+          <button><img src="assets/account.png" alt="Account" /></button>
+          <ul>
+            <li>
+              <img src="assets/account.png" alt="Account" /> Login as Seller
+            </li>
+            <li>
+              <img src="assets/account.png" alt="Account" /> Login as Buyer
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="links">
+        <a href="#">Home Decor</a>
+        <a href="#">Fashion</a>
+        <a href="#">Stuffed Toys</a>
+        <a href="#">Accessories</a>
+        <a href="customOrder.html">Custom Order</a>
+        <a href="#">About Us</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="video">
+        <!-- Placeholder video -->
+        <iframe
+          width="500"
+          height="1000"
+          src="assets/custom-video.mp4?autoplay=1&loop=1&muted=1"
+          frameborder="0"
+          allow="autoplay; picture-in-picture"
+        ></iframe>
+      </div>
+      <div class="form-container">
+        <h2>Custom Order</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              placeholder="Name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="Category"
+              id="category"
+              name="category"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              placeholder="Product Name"
+              type="text"
+              id="product"
+              name="product"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              placeholder="Description"
+              id="description"
+              name="description"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <input
+              type="file"
+              id="image"
+              name="image"
+              accept="image/*"
+              required
+            />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
