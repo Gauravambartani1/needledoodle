@@ -1,0 +1,26 @@
+.video-section {
+    width: 100%;
+    height: 75vh; /* Half the height of the viewport */
+    overflow: hidden;
+}
+
+.video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-us-section {
+    padding: 50px;
+}
+
+.about-us-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-us-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}

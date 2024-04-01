@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Create an Account</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#"><img src="assets/logo.jpg" alt="Logo" /></a>
+      </div>
+      <div class="search-bar">
+        <img src="assets/search-icon.svg" alt="Search" />
+        <input type="text" />
+      </div>
+      <div class="icons">
+        <button><img src="assets/wishlist-hollow.png" alt="Wishlist" /></button>
+        <button><img src="assets/shopping-bag.png" alt="Cart" /></button>
+        <div class="action">
+          <button><img src="assets/account.png" alt="Account" /></button>
+          <ul>
+            <li>
+              <img src="assets/account.png" alt="Account" /> Login as Seller
+            </li>
+            <li>
+              <img src="assets/account.png" alt="Account" /> Login as Buyer
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="links">
+        <a href="#">Home Decor</a>
+        <a href="#">Fashion</a>
+        <a href="#">Stuffed Toys</a>
+        <a href="#">Accessories</a>
+        <a href="customOrder.html">Custom Order</a>
+        <a href="#">About Us</a>
+      </div>
+    </nav>
+
+    <div class="signup-container">
+      <h2>Create an Account</h2>
+      <p>Let's get started</p>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+          <span class="show-password" onclick="togglePasswordVisibility()">
+            <img src="assets/eye.svg" alt="Show Password" />
+          </span>
+        </div>
+        <button type="submit" class="signup-btn">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
+
+    <script src="signup.js"></script>
+  </body>
+</html>

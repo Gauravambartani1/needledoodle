@@ -1,0 +1,92 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    
+}
+.signup-container {
+  max-width: 500px; /* Decrease max-width of container */
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.signup-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.signup-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex; /* Change to flex to center items */
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%; /* Make width 100% */
+}
+
+.form-group label {
+  position: absolute;
+  top: -8px; /* Change top to 0 */
+  left: 50px;
+  background-color: white;
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 80%; /* Decrease width of input fields */
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  
+}
+
+.show-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+
+}
+
+.signup-btn {
+  padding: 10px 20px;
+  border: none;
+  width: 80%; /* Decrease width of button */
+  border-radius: 20px;
+  background-color: navy;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #001f3f;
+}
+
+.signup-container p:last-child {
+  margin-top: 20px;
+}
+
+.signup-container p:last-child a {
+  color: navy;
+  text-decoration: none;
+}
+
+.signup-container p:last-child a:hover {
+  text-decoration: underline;
+}
+
+.show-password img {
+  width: 20px; /* Decrease width of icon */
+  height: auto;
+  margin-right: 40px;
+
+}
