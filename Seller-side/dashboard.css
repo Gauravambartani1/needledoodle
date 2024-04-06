@@ -1,0 +1,132 @@
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px; /* Adjust margin as needed */
+  }
+  
+  .dashboard-item {
+    width: 170px; /* Adjust box width */
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: #393D61; /* Set background color */
+    color: white; /* Set text color */
+  }
+  
+  .dashboard-item h3 {
+    margin-bottom: 10px;
+    font-size: 20px; /* Adjust font size */
+    background-color: #393D61;
+  }
+  
+  .icon-container {
+    margin-bottom: 10px;
+    background-color: #393D61;
+  }
+  
+  .icon-container img {
+    width: 60px; /* Adjust icon size */
+    height: 60px; /* Adjust icon size */
+    background-color: #393D61;
+    margin-left: 15px;
+  }
+  
+  .dashboard-item p {
+    /* margin: 0; Remove default margin */
+    font-size: 18px; /* Adjust font size */
+    background-color: #393D61;
+    margin-left: 30px;
+  }
+  
+  .second {
+    display: flex;
+    background-color: #393D61; /* Set background color */
+    flex-direction: row;
+  }
+  
+  .order-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+  
+  /* Styling for table header and cells */
+  .order-table th,
+  .order-table td {
+    padding: 15px;
+    text-align: center;
+    border: none; /* Remove individual cell borders */
+  }
+  .order-table td {
+    vertical-align: middle; /* Vertically center content */
+  }
+  
+  
+  .order-table td img {
+    width: 70px; /* Decrease image size */
+    height: 90px; /* Decrease image size */
+    margin-right: 10px; /* Add margin between image and text */
+  }
+  
+  .order-table th {
+    color: black;
+  }
+  
+  .order-table td.status {
+    position: relative; 
+  }
+  
+  .order-table tr {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;  /* Add bottom border to all rows */
+  }
+  
+  .order-table tr:last-child {
+    border-bottom: none;  /* Remove bottom border from last row (optional) */
+  }
+
+  .svg {
+    width: 40px !important;
+    height: 40px !important;
+    margin-right: 10px !important;
+  }
+  
+.t-head {
+  margin-left: 80px;
+  margin-bottom: 0;
+}
+hr {
+    width: 25%;
+    float: left;
+    margin-left: 5%;
+    height: 1px;
+    background-color: black;
+}
+
+/* Styling for status cells */
+.order-table td.status {
+    position: relative; /* Position relative for positioning content */
+  }
+  
+  /* Background colors based on status */
+  .order-table td.status span {
+    padding: 10px 15px; /* Adjust padding as needed */
+    border-radius: 25px; /* Adjust border-radius as needed */
+  }
+  
+  .order-table td.status .success-bg {
+    background-color: #04C85E; /* Green for success */
+  }
+  
+  .order-table td.status .pending-bg {
+    background-color: #545454; /* Grey for pending */
+  }
+  
+  .order-table td.status .cancelled-bg {
+    background-color: #FF5722; /* Red for cancelled */
+  }
+  

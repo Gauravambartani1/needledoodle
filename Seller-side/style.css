@@ -1,0 +1,160 @@
+* {
+    background-color: #eeeeee;
+    font-family: "Montserrat", sans-serif;
+    
+}
+body {
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: black;
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    width: 100%; /* Take full width of the viewport */
+    z-index: 3; /* Increased z-index to ensure nav appears above the image */
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+    border-radius: 30px;
+    padding: 10px;
+    border: 2px solid black;
+    width: 500px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+.search-bar img {
+    width: 22px;
+    height: 22px;
+}
+.icons {
+    display: flex;
+    align-items: center; /* Add this line to align items vertically */
+    flex-shrink: 0;
+    margin-right: 30px; /* Add margin to create space between icons and scrollbar */
+}
+
+.icons button {
+    border: none;
+    padding: 0;
+    margin-right: 10px; 
+}
+
+.icons button:last-child {
+    margin-right: 0; /* Remove margin from the last icon to prevent extra space */
+}
+
+
+.icons button img {
+    width: 40px;
+    height: 40px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    
+    padding-top: 20px;
+    margin-bottom: 15px;
+    z-index: 2;
+}
+
+.links a {
+    margin: 0 30px;
+    color: black;
+    text-decoration: none;
+}
+.action {
+    position: relative;
+    z-index: 5;
+  }
+
+button {
+    cursor: pointer;
+}
+  
+  .action ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: calc(100% + 10px); /* Adjust as needed to position below the account icon */
+    right: 0;
+    width: 220px; /* Adjust as needed */
+    background-color: #393D61;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+  
+  .action ul.show {
+    opacity: 1;
+  }
+  
+  
+  /* Triangle pointing towards account icon */
+.action ul::before {
+  content: "";
+  position: absolute;
+  top: -20px; /* Adjust as needed */
+  right: 15px; /* Adjust as needed */
+  border: 10px solid transparent;
+  border-bottom-color: #393D61; /* Match background color of the dropdown */
+}
+  
+.action li {
+  background-color: white;
+  padding: 10px 20px;
+  /* border-bottom: 1px solid #ccc; */
+  border: 1px solid black;
+  border-radius: 30px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+  
+  .action li:last-child {
+    border-bottom: none;
+  }
+  
+  .action li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .action li img {
+    margin-right: 10px;
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    /* border-radius: 50%; */
+    background-color: white;
+  }
+  
+

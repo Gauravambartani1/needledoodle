@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#"><img src="assets/logo.jpg" alt="Logo" /></a>
+      </div>
+      <div class="icons">
+        <div class="action">
+          <button><img src="assets/account.png" alt="Account" /></button>
+          <ul>
+            <li>
+              <img src="assets/account.png" alt="Account" /> Login as Seller
+            </li>
+            <li>
+              <img src="assets/account.png" alt="Account" /> Login as Buyer
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="links">
+        <a href="#">Product List</a>
+        <a href="#">Add Product</a>
+      </div>
+    </nav>
+
+    <div class="dashboard">
+      <div class="dashboard-item">
+        <h3>Total Sales</h3>
+        <div class="second">
+          <div class="icon-container">
+            <img src="assets/sales.svg" alt="Total Sales Icon" />
+          </div>
+          <p>₹9982</p>
+        </div>
+      </div>
+      <div class="dashboard-item">
+        <h3>Total Orders</h3>
+        <div class="second">
+          <div class="icon-container">
+            <img src="assets/truck.svg" alt="Total Orders Icon" />
+          </div>
+          <p>998</p>
+        </div>
+      </div>
+      <div class="dashboard-item">
+        <h3>Pending Orders</h3>
+        <div class="second">
+          <div class="icon-container">
+            <img src="assets/clock.svg" alt="Pending Orders Icon" />
+          </div>
+          <p>9</p>
+        </div>
+      </div>
+    </div>
+    <h3 class="t-head">Orders</h3>
+    <hr />
+    <table class="order-table">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12345</td>
+          <td>
+            <img src="assets/butterfly.jpg" alt="Product 1" />
+            Product 1
+          </td>
+          <td>2</td>
+          <td>₹500</td>
+          <td class="status">
+            <span class="success-bg">Success</span>
+          </td>
+          <td>
+            <img class="svg" src="assets/action-truck.svg" alt="Track Order" />
+            <img class="svg" src="assets/action-edit.svg" alt="Edit Order" />
+          </td>
+        </tr>
+        <tr>
+          <td>12345</td>
+          <td>
+            <img src="assets/bag.jpg" alt="Product 1" />
+            Product 1
+          </td>
+          <td>2</td>
+          <td>₹500</td>
+          <td class="status">
+            <span class="pending-bg">Pending</span>
+          </td>
+          <td>
+            <img class="svg" src="assets/action-truck.svg" alt="Track Order" />
+            <img class="svg" src="assets/action-edit.svg" alt="Edit Order" />
+          </td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </body>
+</html>

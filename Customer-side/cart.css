@@ -1,0 +1,107 @@
+.cart-table {
+    width: 60%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse; /* Collapse border spacing */
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    padding: 15px; /* Adjust padding as needed */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid black; /* Add bottom border to each cell */
+    border-top: 1px solid black; /* Add bottom border to each cell */
+
+  }
+.cart-table td:last-child,
+.cart-table th:last-child {
+  border-right: 1px solid black;
+}
+.cart-table td:first-child,
+.cart-table th:first-child {
+  border-left: 1px solid black;
+}
+  .cart-table th {
+    font-weight: bold;
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  .cart-table .product-details {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .cart-table .product-image {
+    width: 80px; /* Adjust image size */
+    height: 100px; /* Adjust image size */
+    margin-right: 10px; /* Add margin to separate image from text */
+  }
+  
+  .cart-table .delete-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Right summary section */
+  .summary {
+    width: 25%;
+    padding-left: 20px; /* Add some padding */
+    border-left: 1px solid black; /* Add left border */
+    margin-right: 60px;
+  }
+  
+  .summary h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .proceed-btn {
+    background-color: #4D4D79;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    align-items: center;
+    width: 350px;
+  }
+  
+  .proceed-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Styling for the horizontal rule */
+  .mains {
+    border: none;
+    border-top: 1px solid black;
+    margin: 10px 0;
+    width: 15%;
+    margin-left: 5%;
+  }
+  
+  .t-head {
+    margin-left: 80px;
+    margin-bottom: 0;
+  }
+  
+  main {
+    margin-top: 170px; /* Adjust margin as needed */
+  }
+  
+  .cart-container {
+    display: flex;
+    justify-content: space-between; /* Separate left and right sections */
+  }
+  

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><img href="#" src="assets/logo.jpg" /></div>
+      <div class="search-bar">
+        <img src="assets/search-icon.svg" alt="Search" />
+        <input type="text" />
+      </div>
+      <div class="icons">
+        <button><img src="assets/wishlist-hollow.png" alt="Wishlist" /></button>
+        <button>
+          <a href="cart.html"
+            ><img src="assets/shopping-bag.png" alt="Cart"
+          /></a>
+        </button>
+
+        <!--Account section here-->
+        <div class="action">
+          <button><img src="assets/account.png" alt="Account" /></button>
+          <ul>
+            <li><img src="assets/account.png" /> Login as Seller</li>
+            <li><img src="assets/account.png" /> Login as Buyer</li>
+          </ul>
+        </div>
+      </div>
+      <div class="links">
+        <a href="home-decor.html">Home Decor</a>
+        <a href="#">Fashion</a>
+        <a href="#">Stuffed Toys</a>
+        <a href="#">Accessories</a>
+        <a href="customOrder.html">Custom Order</a>
+        <a href="#">About Us</a>
+      </div>
+    </nav>
+    <!-- Main Page secton starts here -->
+    <main>
+      <h3 class="t-head">My Shopping Bag</h3>
+      <hr class="mains" />
+      <div class="cart-container">
+        <!-- Left table -->
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Items</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table rows with product details -->
+            <tr>
+              <td>
+                <img
+                  src="assets/butterfly.jpg"
+                  alt="Product 1"
+                  class="product-image"
+                />
+                <!-- New image tag -->
+                Butterfly $399 Delivery by 5-7 Color: Blue
+              </td>
+              <td>2</td>
+              <td>₹1000</td>
+              <td>
+                <img class="delete-icon" src="assets/delete.svg" alt="Delete" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="assets/bag.jpg"
+                  alt="Product 1"
+                  class="product-image"
+                />
+                <!-- New image tag -->
+                Product 1 $399 Delivery by 5-7 Color: Blue
+              </td>
+              <td>2</td>
+              <td>₹1000</td>
+              <td>
+                <img class="delete-icon" src="assets/delete.svg" alt="Delete" />
+              </td>
+            </tr>
+
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+        <!-- Right summary section -->
+        <div class="summary">
+          <h3>Total Amount</h3>
+          <div class="summary-item">
+            <p>Total Items:</p>
+            <p>5</p>
+          </div>
+          <div class="summary-item">
+            <p>Total MRP:</p>
+            <p>₹5000</p>
+          </div>
+          <div class="summary-item">
+            <p>Coupon Discount:</p>
+            <p>₹200</p>
+          </div>
+          <hr />
+          <div class="summary-total">
+            <p>Total:</p>
+            <p>₹4800</p>
+          </div>
+          <button class="proceed-btn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
