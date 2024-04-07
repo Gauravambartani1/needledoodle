@@ -1,0 +1,159 @@
+*{
+    font-weight: 300;
+}
+main {
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    font-size: 30px;
+    font-weight: 100;
+    margin-left: 10%;
+  }
+  
+  main hr {
+    width: 30%;
+    float: left;
+    margin-top: -15px;
+    color: black;
+    margin-bottom: 0;
+  }
+  
+  main input {
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed black;
+    width: 30%;
+    padding: 25%;
+    text-align: center;
+  }
+  
+  .left {
+    width: 50%;
+  }
+  .right{
+    margin-top:50px;    
+  }
+  .signup-container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .signup-container h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .left h3{
+    font-weight: 600;
+  }
+  
+  .signup-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .form-group label {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    background-color: white;
+    padding: 0 5px;
+    font-size: 14px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 400px; /* Adjust width */
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  .form-group textarea {
+    height: 100px; /* Set the height of textarea */
+    resize: none; /* Disable resizing */
+  }
+  
+  .show-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .signup-btn {
+    padding: 10px 20px;
+    border: none;
+    width: 80%;
+    border-radius: 20px;
+    background-color: navy;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 40px;
+  }
+  
+  .signup-btn:hover {
+    background-color: #001f3f;
+  }
+  
+  .signup-container p:last-child {
+    margin-top: 20px;
+  }
+  
+  .signup-container p:last-child a {
+    color: navy;
+    text-decoration: none;
+  }
+  
+  .signup-container p:last-child a:hover {
+    text-decoration: underline;
+  }
+  
+  .show-password img {
+    width: 20px;
+    height: auto;
+    margin-right: 40px;
+  }
+  
+  .left.box-hover {
+    background-color: lightblue; /* Change the box color when hovered */
+  }
+  .upload-btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid black; /* Keep the box outline */
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed black;
+    width: 30%;
+    padding: 25%;
+    text-align: center;
+}
+
+.upload-btn:hover {
+    background-color: black;
+    color: white;
+}

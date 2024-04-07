@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="newProduct.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Add New Products</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#"><img src="assets/logo.jpg" alt="Logo" /></a>
+      </div>
+      <div class="icons">
+        <div class="action">
+          <button><img src="assets/account.png" alt="Account" /></button>
+          <ul>
+            <li>
+              <img src="assets/account.png" alt="Account" /> Login as Seller
+            </li>
+            <li>
+              <img src="assets/account.png" alt="Account" /> Login as Buyer
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="links">
+        <a href="#">Product List</a>
+        <a href="#">Add Product</a>
+      </div>
+    </nav>
+    <main>
+      <div class="left">
+        <h3>Add new product</h3>
+        <hr />
+        <input class="input" type="file" id="fileInput" style="display: none" />
+        <label for="fileInput" class="upload-btn">Upload Image</label>
+      </div>
+      <div class="right">
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Product Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="price">Price</label>
+            <input type="text" id="price" name="price" required />
+          </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" name="description"></textarea>
+          </div>
+          <button type="submit" class="signup-btn">Add Product</button>
+        </form>
+      </div>
+    </main>
+    <script src="newProduct.js" defer></script>
+  </body>
+</html>
