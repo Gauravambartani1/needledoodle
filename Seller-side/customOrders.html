@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="customOrders.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Add New Products</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="dashboard.html"><img src="assets/logo.jpg" alt="Logo" /></a>
+      </div>
+      <div class="icons">
+        <div class="action">
+          <button><img src="assets/account.png" alt="Account" /></button>
+          <ul>
+            <li>
+              <img src="assets/account.png" alt="Account" /> Login as Seller
+            </li>
+            <li>
+              <img src="assets/account.png" alt="Account" /> Login as Buyer
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="links">
+        <a href="#">Product List</a>
+        <a href="newProduct.html">Add Product</a>
+        <a href="customOrders.html">Custom Orders</a>
+      </div>
+    </nav>
+    <main>
+      <h3 class="t-head">Custom Orders</h3>
+      <hr />
+      <table class="order-table">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Description</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#62345</td>
+            <td>
+              <div class="product-text">
+                <a href="readyProducts.html"
+                  ><img
+                    href="readyProducts.html"
+                    src="assets/mouse.jpg"
+                    alt="Product 1"
+                /></a>
+                <a href="readyProducts.html"> Product 1</a>
+              </div>
+            </td>
+            <td>2</td>
+            <td>Lorem ipsum urna...</td>
+            <td>₹500</td>
+            <td class="status">
+              <span class="success-bg">Success</span>
+            </td>
+            <td>
+              <img
+                class="svg"
+                src="assets/action-truck.svg"
+                alt="Track Order"
+              />
+              <img class="svg" src="assets/action-edit.svg" alt="Edit Order" />
+            </td>
+          </tr>
+          <tr>
+            <td>#23455</td>
+            <td>
+              <div class="product-text">
+                <a href="readyProducts.html"
+                  ><img src="assets/bag.jpg" alt="Product 2"
+                /></a>
+                <a href="readyProducts.html"> Product 2</a>
+              </div>
+            </td>
+            <td>2</td>
+            <td>Lorem ipsum urna...</td>
+
+            <td>₹399</td>
+            <td class="status">
+              <span class="pending-bg">Pending</span>
+            </td>
+            <td>
+              <img
+                class="svg"
+                src="assets/action-truck.svg"
+                alt="Track Order"
+              />
+              <img class="svg" src="assets/action-edit.svg" alt="Edit Order" />
+            </td>
+          </tr>
+          <tr>
+            <td>#12778</td>
+            <td>
+              <div class="product-text">
+                <a href="readyProducts.html"
+                  ><img src="assets/bag.jpg" alt="Product 3"
+                /></a>
+                <a href="readyProducts.html"> Product 3</a>
+              </div>
+            </td>
+            <td>2</td>
+            <td>Lorem ipsum urna...</td>
+
+            <td>₹699</td>
+            <td class="status">
+              <span class="success-bg">Success</span>
+            </td>
+            <td>
+              <img
+                class="svg"
+                src="assets/action-truck.svg"
+                alt="Track Order"
+              />
+              <img class="svg" src="assets/action-edit.svg" alt="Edit Order" />
+            </td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

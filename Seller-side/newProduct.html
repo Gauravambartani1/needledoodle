@@ -16,7 +16,7 @@
   <body>
     <nav>
       <div class="logo">
-        <a href="#"><img src="assets/logo.jpg" alt="Logo" /></a>
+        <a href="dashboard.html"><img src="assets/logo.jpg" alt="Logo" /></a>
       </div>
       <div class="icons">
         <div class="action">
@@ -33,15 +33,23 @@
       </div>
       <div class="links">
         <a href="#">Product List</a>
-        <a href="#">Add Product</a>
+        <a href="newProduct.html">Add Product</a>
+        <a href="customOrders.html">Custom Orders</a>
       </div>
     </nav>
     <main>
       <div class="left">
         <h3>Add new product</h3>
         <hr />
-        <input class="input" type="file" id="fileInput" style="display: none" />
-        <label for="fileInput" class="upload-btn">Upload Image</label>
+        <div class="hero">
+          <label for="input-file" id="drop-area">
+            <input type="file" accept="image/*" id="input-file" hidden />
+            <div id="img-view">
+              <img src="assets/upload.svg" />
+              <p>Drag and drop or click here<br />to upload image</p>
+            </div>
+          </label>
+        </div>
       </div>
       <div class="right">
         <form action="#" method="POST">

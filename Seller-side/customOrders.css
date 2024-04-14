@@ -1,27 +1,7 @@
-.dashboard {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 150px; /* Adjust margin as needed */
-  }
-  
-  .dashboard-item {
-    width: 170px; /* Adjust box width */
-    padding: 10px;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 40px;
-    background-color: #393D61; /* Set background color */
-    color: white; /* Set text color */
-  }
-  
-  .dashboard-item h3 {
-    margin-bottom: 10px;
-    font-size: 20px; /* Adjust font size */
-    background-color: #393D61;
-  }
-  
-  .icon-container {
+main {
+    margin-top: 200px;
+}
+.icon-container {
     margin-bottom: 10px;
     background-color: #393D61;
   }
@@ -100,7 +80,7 @@
   margin-bottom: 0;
 }
 hr {
-    width: 25%;
+    width: 15%;
     float: left;
     margin-left: 5%;
     height: 1px;
@@ -129,9 +109,15 @@ hr {
   .order-table td.status .cancelled-bg {
     background-color: #FF5722; /* Red for cancelled */
   }
+  
   .product-text {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+
+  .product-text a {
+    text-decoration: none;
+    color: black;
   }

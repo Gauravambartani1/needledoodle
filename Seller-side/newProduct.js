@@ -1,58 +1,39 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const dropArea = document.querySelector(".left");
-  const fileInput = document.querySelector("#fileInput");
-  const imagePreview = document.querySelector(".left p");
+const dropArea = document.getElementById("drop-area");
+const inputFile = document.getElementById("input-file");
+const imageView = document.getElementById("img-view");
 
-  // Function to handle image preview
-  function handleImagePreview(file) {
-    const reader = new FileReader();
+inputFile.addEventListener("change", uploadImage);
 
-    reader.onload = () => {
-      const img = document.createElement("img");
-      img.src = reader.result;
-      img.style.maxWidth = "100%";
-      img.style.maxHeight = "100%";
-      img.style.width = "auto";
-      img.style.height = "auto";
+function uploadImage() {
+  let imgLink = URL.createObjectURL(inputFile.files[0]);
+  let img = new Image();
+  img.onload = function () {
+    let imgWidth = this.width;
+    let imgHeight = this.height;
+    let aspectRatio = imgWidth / imgHeight;
 
-      img.onload = () => {
-        imagePreview.innerHTML = ""; // Clear previous content
-        imagePreview.appendChild(img);
-      };
-    };
-
-    reader.readAsDataURL(file);
-  }
-
-  dropArea.addEventListener("dragover", (e) => {
-    e.preventDefault();
-    dropArea.classList.add("highlight");
-  });
-
-  dropArea.addEventListener("dragleave", () => {
-    dropArea.classList.remove("highlight");
-  });
-
-  dropArea.addEventListener("drop", (e) => {
-    e.preventDefault();
-    dropArea.classList.remove("highlight");
-
-    const file = e.dataTransfer.files[0];
-    if (file && file.type.startsWith("image/")) {
-      handleImagePreview(file);
+    // Set the image dimensions based on aspect ratio
+    if (aspectRatio > 1) {
+      // Landscape image
+      imageView.style.backgroundSize = "cover";
+    } else {
+      // Portrait image
+      imageView.style.backgroundSize = "auto 100%";
     }
-  });
 
-  // Trigger file input when clicked on the drop area
-  dropArea.addEventListener("click", () => {
-    fileInput.click();
-  });
+    imageView.style.backgroundImage = `url(${imgLink})`;
+    imageView.textContent = "";
+    imageView.style.border = 0;
+  };
+  img.src = imgLink;
+}
 
-  // Update image preview when a file is selected via file input
-  fileInput.addEventListener("change", () => {
-    const file = fileInput.files[0];
-    if (file && file.type.startsWith("image/")) {
-      handleImagePreview(file);
-    }
-  });
+dropArea.addEventListener("dragover", function (e) {
+  e.preventDefault();
+});
+
+dropArea.addEventListener("drop", function (e) {
+  e.preventDefault();
+  inputFile.files = e.dataTransfer.files;
+  uploadImage();
 });
