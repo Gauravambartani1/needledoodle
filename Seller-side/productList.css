@@ -12,13 +12,17 @@
     margin-top: 5%;
     
   }
+  main {
+    /* border: 1px solid black; */
+    border-radius: 20px;
+  }
   
   .product {
     width: 30%;
   }
   
   .card {
-    border: 2px solid #393D61;
+    border: 1px solid #393D61;
     border-radius: 20px;
     overflow: hidden;
     transition: transform 0.3s ease;
